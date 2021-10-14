@@ -1,12 +1,12 @@
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("./src/images");
+  eleventyConfig.addPassthroughCopy('./src/images');
   return {
-    markdownTemplateEngine: "njk",
-    dataTemplateEngine: "njk",
-    htmlTemplateEngine: "njk",
+    markdownTemplateEngine: 'njk',
+    dataTemplateEngine: 'njk',
+    htmlTemplateEngine: 'njk',
     dir: {
-      input: "src",
-      output: "dist",
+      input: 'src',
+      output: 'dist',
     },
   };
 };
