@@ -1,0 +1,27 @@
+{
+  "name": "cactus-photo-studio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass --no-source-map --watch src/scss:dist/css",
+    "watch:eleventy": "eleventy --serve",
+    "start": "npm-run-all --parallel watch:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdZion/cactus-photo-studio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EdZion/cactus-photo-studio/issues"
+  },
+  "homepage": "https://github.com/EdZion/cactus-photo-studio#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.43.2"
+  }
+}
