@@ -1,4 +1,32 @@
 {% extends "layouts/base.html" %}
 {% block content %}
+    <h1>
+        {{ title }}
+    </h1>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+
+    <div>
+        <label for="username">Namn:</label>
+        <input type="text" id="name" name="name">
+    </div>
+
+    <div>
+        <label for="pass"> E-mail:</label>
+        <input type="text" id="e-mail" name="e-mail">
+    </div>
+
+    <div>
+        <label for="pass"> Nummer:</label>
+        <input type="text" id="number" name="number">
+    </div>
+    <input type="submit" value="Boka">
+
     {{ content | safe }}
 {% endblock %}
