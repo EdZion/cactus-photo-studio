@@ -1,0 +1,14 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+}
+.imgmini{
+    width: 15rem;
+    height: 15rem;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

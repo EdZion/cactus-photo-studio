@@ -1,11 +1,13 @@
 {% extends "layouts/base.html" %} {% block content %}
-<h1>{{ title }}</h1>
-<div class>
-  <img src="{{ founder_image_1 }}" alt="founder_image_1" />
-  <p class="textbox">{{ founder_text_1 }}</p>
-</div>
-<div>
-  <img src="{{ founder_image_2 }}" alt="founder_image_2" />
-  <p class="textbox">{{ founder_text_2 }}</p>
+<div class="about">
+  <h1>{{ title }}</h1>
+  <div class>
+    <img src="{{ founder_image_1 }}" alt="founder_image_1" />
+    <p class="textbox">{{ founder_text_1 }}</p>
+  </div>
+  <div>
+    <img src="{{ founder_image_2 }}" alt="founder_image_2" />
+    <p class="textbox">{{ founder_text_2 }}</p>
+  </div>
 </div>
 {{ content | safe }} {% endblock %}

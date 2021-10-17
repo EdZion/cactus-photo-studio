@@ -1,21 +1,9 @@
 {% extends "layouts/base.html" %} {% block content %}
-<h1>{{ meta.title }}</h1>
 
-<div class="header">
-  <div class="img" style="background-image: url('/images/cactus_8.jpg')"></div>
-  <div class="img" style="background-image: url('/images/cactus_7.jpg')"></div>
-  <div class="img" style="background-image: url('/images/cactus_6.jpg')"></div>
-</div>
+{% include "components/header.html" %} 
 
-<h2>{{ meta.studio }}</h2>
-<div class="img" style="background-image: url('/images/studio_1.jpg')"></div>
+{% include "components/studio.html" %} 
 
-<h2>{{ meta.galleri }}</h2>
-<div class="galleri">
-<div class="img" style="background-image: url('/images/cactus_5.jpg')"></div>
-<div class="img" style="background-image: url('/images/cactus_4.jpg')"></div>
-<div class="img" style="background-image: url('/images/cactus_3.jpg')"></div>
-<div class="img" style="background-image: url('/images/cactus_2.jpg')"></div>
-<div class="img" style="background-image: url('/images/cactus_1.jpg')"></div>
-</div>
+{% include "components/galleri.html" %} 
+
 {{ content | safe }} {% endblock %}

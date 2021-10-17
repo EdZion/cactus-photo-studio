@@ -4,29 +4,46 @@
         {{ title }}
     </h1>
     <div class="dropdown">
-        <button class="dropbtn">Dropdown</button>
+        <button class="dropbtn">Dag</button>
         <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a href="#">Måndag</a>
+            <a href="#">Tisdag</a>
+            <a href="#">Onsdag</a>
+            <a href="#">Torsdag</a>
+            <a href="#">Fredag</a>
+            <a href="#">Lördag</a>
+            <a href="#">Söndag</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Vecka</button>
+        <div class="dropdown-content">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
         </div>
     </div>
 
     <div>
-        <label for="username">Namn:</label>
-        <input type="text" id="name" name="name">
+        {# <label for="namn">Namn:</label> #}
+        <input type="text" id="name" name="name" placeholder="Namn...">
     </div>
 
     <div>
-        <label for="pass"> E-mail:</label>
-        <input type="text" id="e-mail" name="e-mail">
+        {# <label for="e-mail"> E-post:</label> #}
+        <input type="text" id="e-mail" name="e-mail" placeholder="E-post...">
     </div>
 
     <div>
-        <label for="pass"> Nummer:</label>
-        <input type="text" id="number" name="number">
+        {# <label for="number"> Telefon:</label> #}
+        <input type="text" id="number" name="number" placeholder="Telefon...">
     </div>
+    
     <input type="submit" value="Boka">
-
-    {{ content | safe }}
+{{ content | safe }}
 {% endblock %}
