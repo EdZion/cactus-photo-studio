@@ -1,6 +1,30 @@
-.textbox {
+.about-image {
+  margin: 0 auto 0 auto;
+}
+
+.textbox-left {
   background-color: #f0f0f0;
+  margin: 0 auto 0 auto;
   border-radius: 5px;
   max-width: 18rem;
   padding: 1rem;
 }
+
+.textbox-right {
+  background-color: #f0f0f0;
+  margin: 0 auto 0 auto;
+  border-radius: 5px;
+  max-width: 18rem;
+  padding: 1rem;
+}
+
+ @media (max-width:37.5rem) {
+  .textbox-left {
+    padding-left: 6rem;
+    margin-left: 0;
+  }
+  .textbox-right {
+    padding-right: 6rem;
+    margin-right: 0;
+  }
+ }
