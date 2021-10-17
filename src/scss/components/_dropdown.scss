@@ -5,6 +5,7 @@
   padding: 16px;
   font-size: 16px;
   border: none;
+  margin-bottom: 1rem;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -39,3 +40,13 @@
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #5c755e;}
+
+.boka{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input{
+  margin-top: 0.5rem;
+}
